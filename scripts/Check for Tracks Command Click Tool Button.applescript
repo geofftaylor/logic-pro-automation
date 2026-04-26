@@ -57,4 +57,4 @@ end tell
 set kmInst to system attribute "KMINSTANCE"
 tell application "Keyboard Maestro Engine"
 	setvariable "Local__CommandClickToolButtonFound" to commandClickToolButtonFound instance kmInst
-end
+end tell
