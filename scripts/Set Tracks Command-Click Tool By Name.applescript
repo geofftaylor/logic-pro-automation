@@ -1,7 +1,7 @@
 use AppleScript version "2.4" -- Yosemite (10.10) or later
 use scripting additions
 
--- Change "Marquee Tool" to any other tool. See the README for a list of tool names.
+-- Change "Marquee Tool" to any other tool.
 set theTool to "Marquee Tool"
 set theToolbar to missing value
 set toolbarGroups to missing value
