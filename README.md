@@ -1,27 +1,15 @@
 # Logic Pro Automation
 
-This repository contains tools for automating [Logic Pro](https://apple.com/logic-pro).
+This repository contains tools for automating [Logic Pro](https://apple.com/logic-pro) with AppleScript and Keyboard Maestro.
 
-## set-command-click-tool.applescript
+## Check for Piano Roll Command-Click Tool Button.applescript
+Check if the Piano Roll is open. If it's open, check if the Command-Click tool button is visible. Can be used without Keyboard Maestro by removing the Keyboard Maestro block at the end of the script.
 
-Uses UI scripting to assign the Command-click tool. When paired with an app like Keyboard Maestro, this script will allow you to assign the Command-click tool with a keyboard shortcut.
+## Check for Tracks Command-Click Tool Button.applescript
+Check if the Tracks area's Command-Click tool button is visible. Can be used without Keyboard Maestro by removing the Keyboard Maestro block at the end of the script.
 
-In the line `set theTool to "Marquee Tool"`, change "Marquee Tool" to the named of the desired tool. It must be enclosed in quotation marks. As of Logic Pro 11.1, the tool names are
+## Set Command-Click Tool with Keyboard Maestro.applescript
+Set the Command-Click tool for a specific toolbar (e.g., Tracks area or Piano Roll). The tool must be passed as a Keyboard Maestro variable.
 
-- Pointer Tool
-- Pencil Tool
-- Eraser Tool
-- Text Tool
-- Scissors Tool
-- Join Tool
-- Solo Tool
-- Mute Tool
-- Zoom Tool
-- Fade Tool
-- Automation Select Tool
-- Automation Curve Tool
-- Marquee Tool
-- Flex Tool
-- Gain Tool
-- Slip Tool
-- Rotate Tool
+## Set Tracks Command-Click Tool by Name.applescript
+Set the Tracks area Command-Click tool to a specific tool (Keyboard Maestro not required).
